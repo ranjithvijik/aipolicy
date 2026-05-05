@@ -14,11 +14,10 @@
     <link rel="stylesheet" href="https://www.ubalt.edu/_resources/css/custom.css">
 
     <style>
-        /* SCOPED APPLICATION STYLES 
-           All custom styles are nested under #ai-policy-app to prevent 
-           breaking the UBalt Header and Footer.
+        /* SCOPED APPLICATION STYLES
+            All custom styles are nested under #ai-policy-app to prevent
+            breaking the UBalt Header and Footer.
         */
-
         #ai-policy-app {
             --primary: #1e3a5f;
             --primary-light: #2d5a8b;
@@ -29,9 +28,7 @@
             --danger: #dc3545;
             --light: #f8f9fa;
             --dark: #111111;
-            /* Darkened for better contrast */
             --gray: #495057;
-            /* Darkened for readability */
             --border: #dee2e6;
 
             background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
@@ -40,9 +37,8 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             color: var(--dark);
             line-height: 1.7;
-            /* Increased for readability */
-            font-size: 1.05rem;
-            /* Base font size increased */
+            font-size: 1.15rem;
+            font-weight: 500;
         }
 
         #ai-policy-app * {
@@ -50,38 +46,35 @@
         }
 
         #ai-policy-app .app-container {
-            max-width: 900px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
         #ai-policy-app .app-header {
             background: var(--primary);
             color: white;
-            padding: 40px 20px;
+            padding: 50px 20px;
             text-align: center;
             border-radius: 12px 12px 0 0;
         }
 
         #ai-policy-app .app-header h1 {
-            font-size: 2.5rem;
-            /* Bigger title */
-            font-weight: 800;
-            /* Bolder */
+            font-size: 3rem;
+            font-weight: 900;
             margin-bottom: 15px;
             color: white;
         }
 
         #ai-policy-app .app-header p {
             opacity: 0.95;
-            font-size: 1.2rem;
-            /* Bigger subtitle */
-            font-weight: 600;
+            font-size: 1.4rem;
+            font-weight: 700;
             margin: 0;
         }
 
         #ai-policy-app .main-content {
             background: white;
-            padding: 50px 40px;
+            padding: 60px 50px;
             border-radius: 0 0 12px 12px;
             box-shadow: 0 15px 50px rgba(0, 0, 0, 0.08);
         }
@@ -90,15 +83,14 @@
         #ai-policy-app .progress-bar {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 50px;
+            margin-bottom: 60px;
             position: relative;
         }
 
         #ai-policy-app .progress-bar::before {
             content: '';
             position: absolute;
-            top: 20px;
-            /* Adjusted for larger step circles */
+            top: 24px;
             left: 0;
             right: 0;
             height: 4px;
@@ -117,9 +109,8 @@
         }
 
         #ai-policy-app .step-number {
-            width: 44px;
-            /* Bigger circles */
-            height: 44px;
+            width: 50px;
+            height: 50px;
             border-radius: 50%;
             background: white;
             border: 4px solid var(--border);
@@ -127,9 +118,8 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            font-weight: 800;
-            /* Bolder numbers */
-            font-size: 1.1rem;
+            font-weight: 900;
+            font-size: 1.25rem;
             transition: all 0.3s ease;
         }
 
@@ -147,11 +137,10 @@
         }
 
         #ai-policy-app .step-label {
-            font-size: 0.9rem;
-            margin-top: 12px;
+            font-size: 1.05rem;
+            margin-top: 15px;
             color: var(--gray);
-            font-weight: 800;
-            /* Bolder labels */
+            font-weight: 900;
             text-align: center;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -173,34 +162,29 @@
 
         #ai-policy-app .section-title {
             color: var(--primary);
-            font-size: 1.8rem;
-            /* Bigger section titles */
-            margin-bottom: 30px;
+            font-size: 2.2rem;
+            margin-bottom: 35px;
             padding-bottom: 15px;
             border-bottom: 4px solid var(--accent);
-            font-weight: 800;
-            /* Bolder */
+            font-weight: 900;
         }
 
         /* Forms */
         #ai-policy-app .question-group {
-            margin-bottom: 40px;
-            /* More breathing room */
+            margin-bottom: 45px;
         }
 
         #ai-policy-app .question-label {
-            font-weight: 800;
-            /* Bolder questions */
-            margin-bottom: 15px;
+            font-weight: 900;
+            margin-bottom: 18px;
             color: var(--primary);
-            font-size: 1.25rem;
-            /* Bigger questions */
+            font-size: 1.5rem;
         }
 
         #ai-policy-app .question-hint {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: var(--gray);
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 15px;
         }
 
@@ -211,23 +195,21 @@
         }
 
         #ai-policy-app .checkbox-group {
-            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         }
 
         #ai-policy-app .radio-option,
         #ai-policy-app .checkbox-option {
             display: flex;
             align-items: flex-start;
-            padding: 20px;
-            /* Larger hit areas */
+            padding: 22px;
             border: 2px solid var(--border);
             border-radius: 10px;
             cursor: pointer;
             transition: all 0.2s ease;
             background: white;
-            font-size: 1.05rem;
-            font-weight: 700;
-            /* Bolder options */
+            font-size: 1.15rem;
+            font-weight: 800;
             color: var(--dark);
         }
 
@@ -247,9 +229,7 @@
             background: #f0f7ff;
             box-shadow: 0 2px 8px rgba(30, 58, 95, 0.05);
             border-width: 3px;
-            /* Stronger selected state */
-            padding: 19px;
-            /* Compensate for border width */
+            padding: 21px;
         }
 
         #ai-policy-app input[type="radio"],
@@ -257,9 +237,8 @@
             margin-right: 15px;
             margin-top: 4px;
             accent-color: var(--primary);
-            width: 22px;
-            /* Bigger inputs */
-            height: 22px;
+            width: 24px;
+            height: 24px;
             cursor: pointer;
         }
 
@@ -272,29 +251,28 @@
         }
 
         #ai-policy-app .radio-title {
-            font-weight: 800;
+            font-weight: 900;
             color: var(--dark);
             margin-bottom: 6px;
-            font-size: 1.1rem;
+            font-size: 1.25rem;
         }
 
         #ai-policy-app .radio-description {
-            font-size: 1rem;
+            font-size: 1.1rem;
             color: var(--gray);
             line-height: 1.5;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         #ai-policy-app textarea,
         #ai-policy-app input[type="text"] {
             width: 100%;
-            padding: 16px;
+            padding: 18px;
             border: 2px solid var(--border);
             border-radius: 10px;
             font-family: inherit;
-            font-size: 1.1rem;
-            /* Bigger input text */
-            font-weight: 500;
+            font-size: 1.15rem;
+            font-weight: 600;
             transition: all 0.2s ease;
             background: #fff;
             color: var(--dark);
@@ -322,14 +300,11 @@
         }
 
         #ai-policy-app .btn {
-            padding: 16px 36px;
-            /* Bigger buttons */
+            padding: 18px 40px;
             border: none;
             border-radius: 8px;
-            font-size: 1.15rem;
-            /* Bigger button text */
-            font-weight: 800;
-            /* Bolder button text */
+            font-size: 1.25rem;
+            font-weight: 900;
             cursor: pointer;
             transition: all 0.2s ease;
             display: inline-flex;
@@ -354,7 +329,6 @@
             border: 2px solid var(--gray);
         }
 
-        /* Stronger border */
         #ai-policy-app .btn-secondary:hover {
             background: var(--light);
             border-color: var(--dark);
@@ -387,14 +361,13 @@
             align-items: center;
             margin-bottom: 25px;
             flex-wrap: wrap;
-            /* Allows wrapping on smaller screens */
             gap: 15px;
         }
 
         #ai-policy-app .output-title {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             color: var(--primary);
-            font-weight: 800;
+            font-weight: 900;
         }
 
         #ai-policy-app .output-actions {
@@ -410,11 +383,9 @@
             padding: 35px;
             font-family: 'Georgia', serif;
             line-height: 1.8;
-            font-size: 1.15rem;
-            /* Highly readable policy text */
+            font-size: 1.25rem;
             white-space: pre-wrap;
             color: #111;
-            /* High contrast text */
             font-weight: 500;
             box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.02);
         }
@@ -429,16 +400,16 @@
         }
 
         #ai-policy-app .info-box-title {
-            font-weight: 800;
+            font-weight: 900;
             color: var(--primary);
             margin-bottom: 10px;
-            font-size: 1.2rem;
+            font-size: 1.4rem;
         }
 
         #ai-policy-app .info-box p {
             margin: 0;
-            font-size: 1.05rem;
-            font-weight: 500;
+            font-size: 1.15rem;
+            font-weight: 600;
         }
 
         /* Level Cards */
@@ -478,7 +449,7 @@
         }
 
         #ai-policy-app .level-card-title {
-            font-weight: 800;
+            font-weight: 900;
             color: var(--primary);
             font-size: 1.35rem;
             cursor: pointer;
@@ -489,16 +460,16 @@
         }
 
         #ai-policy-app .level-card-description {
-            font-size: 1.05rem;
+            font-size: 1.15rem;
             color: var(--dark);
             margin-bottom: 15px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         #ai-policy-app .level-card-details {
             display: none;
             margin: 20px 0;
-            font-size: 1rem;
+            font-size: 1.15rem;
             border-top: 2px dashed var(--border);
             padding-top: 20px;
             animation: fadeIn 0.3s ease;
@@ -513,8 +484,8 @@
             display: block;
             margin-bottom: 8px;
             margin-top: 15px;
-            font-weight: 800;
-            font-size: 1.1rem;
+            font-weight: 900;
+            font-size: 1.2rem;
         }
 
         #ai-policy-app .level-card-details ul {
@@ -524,12 +495,13 @@
 
         #ai-policy-app .level-card-details ul li {
             margin-bottom: 6px;
-            font-weight: 500;
+            font-weight: 600;
+            font-size: 1.15rem;
         }
 
         #ai-policy-app .level-card-disclosure {
-            font-size: 1rem;
-            font-weight: 600;
+            font-size: 1.15rem;
+            font-weight: 700;
             color: var(--dark);
             background: #eef5fb;
             padding: 16px;
@@ -546,7 +518,7 @@
 
         #ai-policy-app .approach-btn {
             flex: 1;
-            padding: 25px;
+            padding: 30px 25px;
             border: 2px solid var(--border);
             border-radius: 12px;
             background: white;
@@ -566,18 +538,18 @@
             color: white;
             box-shadow: 0 6px 20px rgba(30, 58, 95, 0.25);
             border-width: 3px;
-            padding: 24px;
+            padding: 29px 24px;
         }
 
         #ai-policy-app .approach-btn-title {
-            font-weight: 800;
-            font-size: 1.3rem;
+            font-weight: 900;
+            font-size: 1.5rem;
             margin-bottom: 8px;
         }
 
         #ai-policy-app .approach-btn.active .approach-btn-desc {
             color: rgba(255, 255, 255, 0.9);
-            font-weight: 600;
+            font-weight: 700;
         }
 
         #ai-policy-app .hidden {
@@ -687,13 +659,7 @@
             font-weight: 800;
         }
 
-        #ai-policy-app .essay-content p {
-            margin-bottom: 18px;
-            font-size: 1.05rem;
-            line-height: 1.8;
-            font-weight: 500;
-        }
-
+        #ai-policy-app .essay-content p,
         #ai-policy-app .essay-content ul {
             margin-bottom: 18px;
             font-size: 1.05rem;
@@ -804,7 +770,6 @@
                 display: none;
             }
 
-            /* Hide labels on mobile for space */
             #ai-policy-app .approach-toggle {
                 flex-direction: column;
             }
@@ -868,7 +833,6 @@
                             </a>
                         </div>
                     </div>
-
                     <!-- Search Box -->
                     <div class="main-header__search-box" role="search">
                         <button type="button" class="search-opener" aria-expanded="false">
@@ -885,13 +849,12 @@
                             </svg>
                         </button>
                     </div>
-
                     <!-- Mobile Menu Opener -->
                     <nav class="main-header__nav-opener_wrapper" aria-label="Full">
-                        <button class="main-header__nav-opener" type="button" aria-expanded="false"><span
-                                class="icon"><span></span></span>Menu</button>
+                        <button class="main-header__nav-opener" type="button" aria-expanded="false">
+                            <span class="icon"><span></span></span>Menu
+                        </button>
                     </nav>
-
                     <!-- Navigation Content -->
                     <div class="main-header__nav-holder" aria-hidden="true">
                         <div class="main-header__nav-box">
@@ -939,8 +902,9 @@
                                 </nav>
                                 <div class="main-header__cta-list">
                                     <a href="https://www.ubalt.edu/admission-and-aid/apply-now.cfm"
-                                        class="main-header__cta-list__link main-header__cta-list__link--yellow cta--button"><span
-                                            class="text">Apply</span></a>
+                                        class="main-header__cta-list__link main-header__cta-list__link--yellow cta--button">
+                                        <span class="text">Apply</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -955,7 +919,6 @@
     <!-- ========================================== -->
     <div id="ai-policy-app">
         <div class="app-container">
-
             <header class="app-header">
                 <h1>AI Policy Generator</h1>
                 <p>Create a syllabus statement aligned with UBalt's AI Policy Framework</p>
@@ -1011,7 +974,7 @@
                     </div>
 
                     <div class="question-group">
-                        <div class="question-label">Course Information (Optional)</div>
+                        <div class="question-label">Course Information</div>
                         <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 15px;">
                             <input type="text" id="courseCode" placeholder="Course Code (e.g., PSY 101)">
                             <input type="text" id="courseName" placeholder="Course Name (e.g., Intro to Psychology)">
@@ -1029,6 +992,7 @@
 
                 <!-- SECTION 2: AI Level Selection (Framework) OR Custom Start -->
                 <div class="section" id="section2">
+
                     <!-- Framework UI -->
                     <div id="frameworkSelection">
                         <h2 class="section-title">Step 2: Select AI Usage Level</h2>
@@ -1037,7 +1001,6 @@
                             <p>Select the level that best describes how AI should be used in your course. Each level
                                 includes specific disclosure requirements.</p>
                         </div>
-
                         <div class="level-cards">
                             <!-- Levels generated via JS to keep HTML clean -->
                             <div id="levelCardsContainer"></div>
@@ -1065,7 +1028,7 @@
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                         name="permittedTools" value="none"> No generative AI permitted</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                        name="permittedTools" value="boodlebox"> BoodleBox AI (Institutional)</label>
+                                        name="permittedTools" value="boodlebox"> BoodleBox</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                         name="permittedTools" value="chatgpt"> ChatGPT</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
@@ -1073,7 +1036,7 @@
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                         name="permittedTools" value="gemini"> Google Gemini</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                        name="permittedTools" value="grammarly"> Grammarly Premium AI</label>
+                                        name="permittedTools" value="grammarly"> Grammarly</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                         name="permittedTools" value="copilot"> GitHub Copilot</label>
                                 <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
@@ -1185,8 +1148,9 @@
                                     name="consequences" value="resubmit"> Required resubmission</label>
                             <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                     name="consequences" value="zero"> Assignment failure (zero grade)</label>
-                            <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                    name="consequences" value="integrity" checked> Academic integrity referral</label>
+                            <label class="checkbox-option selected" onclick="toggleCheckbox(this)"><input
+                                    type="checkbox" name="consequences" value="integrity" checked> Academic integrity
+                                referral</label>
                             <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                     name="consequences" value="course_fail"> Course failure</label>
                             <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
@@ -1203,12 +1167,13 @@
                     <div class="question-group">
                         <div class="question-label">Available Support Resources</div>
                         <div class="checkbox-group">
-                            <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                    name="support" value="boodlebox" checked> BoodleBox AI Platform</label>
-                            <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                    name="support" value="office" checked> Office hours</label>
-                            <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
-                                    name="support" value="writing" checked> Writing Center</label>
+                            <label class="checkbox-option selected" onclick="toggleCheckbox(this)"><input
+                                    type="checkbox" name="support" value="boodlebox" checked> BoodleBox AI
+                                Platform</label>
+                            <label class="checkbox-option selected" onclick="toggleCheckbox(this)"><input
+                                    type="checkbox" name="support" value="office" checked> Office hours</label>
+                            <label class="checkbox-option selected" onclick="toggleCheckbox(this)"><input
+                                    type="checkbox" name="support" value="writing" checked> Writing Center</label>
                             <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
                                     name="support" value="library"> Library resources</label>
                             <label class="checkbox-option" onclick="toggleCheckbox(this)"><input type="checkbox"
@@ -1241,6 +1206,7 @@
                             <div class="output-actions">
                                 <button class="btn btn-primary" onclick="copyPolicy()">📋 Copy</button>
                                 <button class="btn btn-secondary" onclick="downloadPolicy()">⬇️ Download .txt</button>
+                                <button class="btn btn-secondary" onclick="downloadWord()">📄 Download .doc</button>
                                 <button class="btn btn-secondary" onclick="printPolicy()">🖨️ Print</button>
                             </div>
                         </div>
@@ -1251,8 +1217,8 @@
                         <h3 style="color:var(--primary);font-size:1.3rem;font-weight:800;margin-bottom:15px;">📋 AI Use
                             Disclosure Statement Template</h3>
                         <div class="disclosure-template">
-                            <h3>AI Use Disclosure Statement</h3>Student Name: _______________________ Course:
-                            _______________________
+                            <h3>AI Use Disclosure Statement</h3>
+                            Student Name: _______________________ Course: _______________________
                             Assignment: _________________________ Date: _________________________
 
                             <strong>AI Tool(s) Used:</strong>
@@ -1288,9 +1254,11 @@
                         <div class="citation-block">
                             <strong>APA Style (7th Edition):</strong><br>
                             <code>OpenAI. (2024). ChatGPT (Mar 14 version) [Large language model]. https://chat.openai.com/chat</code><br><br>
+
                             <strong>In-text citation:</strong><br>
                             <code>(OpenAI, 2024)</code> &nbsp;or&nbsp;
                             <code>"When prompted with [query], ChatGPT generated..."</code><br><br>
+
                             <em>Note: Follow discipline-appropriate citation formats. Consult your library or instructor
                                 for MLA, Chicago, and other style requirements.</em>
                         </div>
@@ -1302,7 +1270,6 @@
                             onclick="startOver()">🔄 Start Over</button>
                     </div>
                 </div>
-
             </div>
 
             <!-- APPENDIX: UBalt AI Policy Framework Reference -->
@@ -1315,7 +1282,7 @@
                         faculty autonomy to determine appropriate integration levels based on course objectives and
                         pedagogical goals.</p>
 
-                    <h3>Our Guiding Principles</h3>
+                    <h3>Guiding Principles</h3>
                     <ul>
                         <li><strong>Academic Integrity:</strong> Upholding honesty and original scholarship</li>
                         <li><strong>Equitable Access:</strong> Ensuring all students have fair access to approved AI
@@ -1329,12 +1296,11 @@
 
                     <h3>Distinguishing Standard Tools from Generative AI</h3>
                     <p><strong>Standard Digital Tools (Always Permitted):</strong><br>
-                        Spellcheck, basic grammar checkers, thesauruses, citation managers (Zotero, EndNote, Mendeley),
-                        search engines, library databases, and basic calculators.<br>
+                        Spellcheck, basic grammar checkers, thesauruses, search engines, library databases, and basic
+                        calculators.<br>
                         <em>These are not considered "AI use" under this policy and may be used at all times unless
                             explicitly restricted.</em>
                     </p>
-
                     <p><strong>Generative AI Tools (Subject to This Policy):</strong> "AI Use" refers specifically to
                         generative AI tools capable of producing original content.</p>
 
@@ -1368,18 +1334,12 @@
                             </tr>
                             <tr>
                                 <td>Writing Enhancement</td>
-                                <td>Grammarly Premium AI, QuillBot (paraphrasing)</td>
+                                <td>Grammarly Premium AI, QuillBot</td>
                             </tr>
                         </tbody>
                     </table>
 
-                    <div class="info-box" style="margin-top:20px; border-left-color: var(--primary);">
-                        <div class="info-box-title">Note on BoodleBox AI</div>
-                        <p>BoodleBox AI serves as the University's primary institutional platform, providing secure
-                            access to multiple AI models while ensuring student safety and equitable access.</p>
-                    </div>
-
-                    <h3>Quick Reference Guide (Appendix A)</h3>
+                    <h3>AI Use Levels and Expectations</h3>
                     <table class="custom-table">
                         <thead>
                             <tr>
@@ -1429,27 +1389,18 @@
                         </tbody>
                     </table>
 
-                    <h3>Faculty Checklist (Appendix B)</h3>
+                    <h3>Faculty Checklist</h3>
                     <p>Before the semester begins, faculty should:</p>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Select appropriate AI
-                            level(s) for the course</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Include AI policy
-                            statement in syllabus</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Specify
-                            permitted/prohibited tools</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Define disclosure
-                            requirements</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Explain consequences
-                            for violations</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Identify support
-                            resources for students</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Prepare to address
-                            student questions about AI use</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Consider accessibility
-                            and equity implications</li>
-                        <li><input type="checkbox" disabled checked style="margin-right: 10px;"> Plan for AI literacy
-                            instruction if appropriate</li>
+                    <ul>
+                        <li>Select appropriate AI level(s) for the course</li>
+                        <li>Include AI policy statement in syllabus</li>
+                        <li>Specify permitted/prohibited tools</li>
+                        <li>Define disclosure requirements</li>
+                        <li>Explain consequences for violations</li>
+                        <li>Identify support resources for students</li>
+                        <li>Prepare to address student questions about AI use</li>
+                        <li>Consider accessibility and equity implications</li>
+                        <li>Plan for AI literacy instruction if appropriate</li>
                     </ul>
 
                     <h3>Citation Guidelines for AI-Generated Content</h3>
@@ -1476,16 +1427,12 @@
                                 <td><code>ChatGPT, response to "Explain the causes of World War I," OpenAI, March 14, 2024, https://chat.openai.com/chat.</code>
                                 </td>
                             </tr>
-                            <tr>
-                                <td><strong>IEEE</strong></td>
-                                <td><code>[1] OpenAI, "ChatGPT," https://chat.openai.com/chat (accessed Mar. 14, 2024).</code>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
 
                     <h3>Academic Integrity &amp; Violations</h3>
-                    <p>Unauthorized or undisclosed AI use constitutes a violation of academic integrity. Violations
+                    <p><strong>Violations:</strong> Unauthorized or undisclosed AI use constitutes a violation of
+                        academic integrity. Violations
                         include:</p>
                     <ul>
                         <li>Using AI when prohibited (Level 1 assignments)</li>
@@ -1495,32 +1442,30 @@
                         <li>Submitting AI-generated content as original work without authorization</li>
                     </ul>
 
-                    <p><strong>Consequences:</strong> Faculty are required to select the appropriate consequences for
+                    <p><strong>Consequences:</strong> Faculty are required to select the appropriate consequences
+                        for
                         violations in their syllabus. Options may include:</p>
-                    <ul style="list-style-type: none; padding-left: 0;">
-                        <li><label style="display:flex; align-items:center;"><input type="checkbox" disabled checked
-                                    style="margin-right: 10px;"> Assignment failure (zero grade)</label></li>
-                        <li><label style="display:flex; align-items:center;"><input type="checkbox" disabled checked
-                                    style="margin-right: 10px;"> Course failure</label></li>
-                        <li><label style="display:flex; align-items:center;"><input type="checkbox" disabled checked
-                                    style="margin-right: 10px;"> Academic probation</label></li>
-                        <li><label style="display:flex; align-items:center;"><input type="checkbox" disabled checked
-                                    style="margin-right: 10px;"> Notation on academic transcript</label></li>
-                        <li><label style="display:flex; align-items:center;"><input type="checkbox" disabled checked
-                                    style="margin-right: 10px;"> Suspension/expulsion for repeated or severe
-                                violations</label></li>
+                    <ul>
+                        <li>Assignment failure (zero grade)</li>
+                        <li>Course failure</li>
+                        <li>Academic probation</li>
+                        <li>Notation on academic transcript</li>
+                        <li>Suspension/expulsion for repeated or severe violations</li>
                     </ul>
 
-                    <p><strong>Detection Methods:</strong> AI detection software, comparison with prior student work,
-                        oral examination/defense, review of required AI interaction logs, and analysis of writing style
+                    <p><strong>Detection Methods:</strong> AI detection software, comparison with prior student
+                        work,
+                        oral examination/defense, review of required AI interaction logs, and analysis of writing
+                        style
                         consistency.</p>
-                    <p><strong>Appeals Process:</strong> Students who believe they have been wrongly accused may appeal
-                        through the University's standard academic integrity appeals process. Documentation of AI use
-                        (or non-use) should be preserved and submitted as part of any appeal.</p>
 
+                    <p><strong>Appeals Process:</strong> Students who believe they have been wrongly accused may
+                        appeal
+                        through the University's standard academic integrity appeals process. Documentation of AI
+                        use
+                        (or non-use) should be preserved and submitted as part of any appeal.</p>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -1534,17 +1479,19 @@
         <div class="container">
             <div class="main-footer__content-box">
                 <div class="main-footer__info-box">
-                    <div class="main-footer__logo"><img
-                            src="https://www.ubalt.edu/_resources/assets/img/footer-primary-logo.png"
-                            alt="University of Baltimore" width="554" height="133"></div>
+                    <div class="main-footer__logo">
+                        <img src="https://www.ubalt.edu/_resources/assets/img/footer-primary-logo.png"
+                            alt="University of Baltimore" width="554" height="133">
+                    </div>
                     <address class="main-footer__address">
                         <p class="address"><span>The University of Baltimore</span></p>
                         <p>1420 N. Charles St.<br>Baltimore, MD 21201</p>
                     </address>
                     <div class="main-footer__social-links">
-                        <div class="main-footer__social-links--item"><a href="https://www.facebook.com/ubaltimore"
-                                class="main-footer__social-link" title="Facebook"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                        <div class="main-footer__social-links--item">
+                            <a href="https://www.facebook.com/ubaltimore" class="main-footer__social-link"
+                                title="Facebook">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none">
                                     <g id="Facebook">
                                         <rect width="32" height="32" rx="16" fill="currentColor"></rect>
@@ -1552,10 +1499,12 @@
                                             d="M19.5946 16.9994L20.0505 14.1051H17.242V12.2239C17.242 11.4324 17.6341 10.6591 18.8879 10.6591H20.1828V8.19446C19.4287 8.07432 18.6668 8.00933 17.9031 8C15.5915 8 14.0823 9.38835 14.0823 11.8982V14.1051H11.52V16.9994H14.0823V24H17.242V16.9994H19.5946Z"
                                             fill="white"></path>
                                     </g>
-                                </svg></a></div>
-                        <div class="main-footer__social-links--item"><a href="http://instagram.com/ubaltmain"
-                                class="main-footer__social-link" title="instagram"><svg
-                                    xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main-footer__social-links--item">
+                            <a href="http://instagram.com/ubaltmain" class="main-footer__social-link" title="instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
                                     fill="none">
                                     <g id="Instagram">
                                         <rect width="32" height="32" rx="16" fill="currentColor"></rect>
@@ -1563,21 +1512,27 @@
                                             d="M13.1888 16.0971C13.1888 14.4887 14.4931 13.1845 16.1025 13.1845C17.7119 13.1845 19.0169 14.4887 19.0169 16.0971C19.0169 17.7056 17.7119 19.0098 16.1025 19.0098C14.4931 19.0098 13.1888 17.7056 13.1888 16.0971ZM11.6133 16.0971C11.6133 18.575 13.6231 20.5836 16.1025 20.5836C18.5819 20.5836 20.5917 18.575 20.5917 16.0971C20.5917 13.6192 18.5819 11.6106 16.1025 11.6106C13.6231 11.6106 11.6133 13.6192 11.6133 16.0971ZM19.7203 11.4328C19.7202 11.6401 19.7816 11.8429 19.8968 12.0153C20.0121 12.1878 20.1758 12.3222 20.3675 12.4017C20.5592 12.4811 20.7701 12.502 20.9736 12.4616C21.1772 12.4212 21.3641 12.3214 21.5109 12.1749C21.6577 12.0283 21.7577 11.8415 21.7982 11.6381C21.8388 11.4348 21.8181 11.2239 21.7388 11.0323C21.6595 10.8407 21.5251 10.6769 21.3526 10.5616C21.1801 10.4464 20.9773 10.3848 20.7698 10.3847H20.7694C20.4913 10.3848 20.2245 10.4953 20.0278 10.6918C19.8311 10.8883 19.7205 11.1548 19.7203 11.4328ZM12.5705 23.2091C11.7182 23.1703 11.2549 23.0284 10.947 22.9085C10.5388 22.7497 10.2476 22.5605 9.94139 22.2549C9.6352 21.9494 9.44566 21.6586 9.28745 21.2507C9.16744 20.9431 9.02546 20.48 8.98671 19.6281C8.94433 18.7071 8.93587 18.4305 8.93587 16.0972C8.93587 13.7639 8.94503 13.488 8.98671 12.5663C9.02553 11.7144 9.16856 11.2522 9.28745 10.9438C9.44636 10.5358 9.63562 10.2448 9.94139 9.93876C10.2472 9.63274 10.5381 9.44332 10.947 9.28521C11.2547 9.16526 11.7182 9.02337 12.5705 8.98465C13.492 8.94229 13.7689 8.93383 16.1025 8.93383C18.4361 8.93383 18.7132 8.94299 19.6355 8.98465C20.4879 9.02344 20.9504 9.16638 21.259 9.28521C21.6672 9.44332 21.9584 9.63316 22.2646 9.93876C22.5708 10.2443 22.7597 10.5358 22.9186 10.9438C23.0386 11.2513 23.1806 11.7144 23.2193 12.5663C23.2617 13.488 23.2702 13.7639 23.2702 16.0972C23.2702 18.4305 23.2617 18.7064 23.2193 19.6281C23.1805 20.48 23.0378 20.943 22.9186 21.2507C22.7597 21.6586 22.5704 21.9496 22.2646 22.2549C21.9588 22.5603 21.6672 22.7497 21.259 22.9085C20.9513 23.0284 20.4879 23.1703 19.6355 23.2091C18.714 23.2514 18.4372 23.2599 16.1025 23.2599C13.7678 23.2599 13.4918 23.2514 12.5705 23.2091ZM12.4981 7.41278C11.5674 7.45513 10.9315 7.60262 10.3761 7.8186C9.80088 8.04165 9.31396 8.34088 8.82739 8.8264C8.34082 9.31191 8.04217 9.79931 7.81899 10.3742C7.60288 10.9296 7.4553 11.5648 7.41292 12.4949C7.36984 13.4265 7.35998 13.7244 7.35998 16.0971C7.35998 18.4699 7.36984 18.7677 7.41292 19.6993C7.4553 20.6295 7.60288 21.2647 7.81899 21.8201C8.04217 22.3946 8.34089 22.8826 8.82739 23.3679C9.31389 23.8532 9.80088 24.152 10.3761 24.3757C10.9325 24.5916 11.5674 24.7391 12.4981 24.7815C13.4308 24.8238 13.7283 24.8344 16.1025 24.8344C18.4767 24.8344 18.7747 24.8245 19.7068 24.7815C20.6376 24.7391 21.2732 24.5916 21.8289 24.3757C22.4037 24.152 22.891 23.8534 23.3776 23.3679C23.8642 22.8824 24.1622 22.3946 24.386 21.8201C24.6021 21.2647 24.7504 20.6295 24.7921 19.6993C24.8344 18.767 24.8443 18.4699 24.8443 16.0971C24.8443 13.7244 24.8344 13.4265 24.7921 12.4949C24.7497 11.5647 24.6021 10.9292 24.386 10.3742C24.1622 9.79966 23.8634 9.31268 23.3776 8.8264C22.8918 8.34011 22.4037 8.04165 21.8296 7.8186C21.2732 7.60262 20.6375 7.45444 19.7075 7.41278C18.7754 7.37042 18.4774 7.35986 16.1032 7.35986C13.729 7.35986 13.4308 7.36972 12.4981 7.41278Z"
                                             fill="white"></path>
                                     </g>
-                                </svg></a></div>
-                        <div class="main-footer__social-links--item"><a href="http://youtube.com/ubalt"
-                                class="main-footer__social-link" title="youtube"><svg xmlns="http://www.w3.org/2000/svg"
-                                    width="32" height="32" viewBox="0 0 32 32" fill="none">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main-footer__social-links--item">
+                            <a href="http://youtube.com/ubalt" class="main-footer__social-link" title="youtube">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
                                     <g id="youtube">
                                         <rect width="32" height="32" rx="16" fill="currentColor"></rect>
                                         <path fill-rule="evenodd" clip-rule="evenodd"
                                             d="M22.9665 9.98119C23.7529 10.1936 24.3709 10.8132 24.5799 11.5986C24.96 13.0241 24.96 16.0001 24.96 16.0001C24.96 16.0001 24.96 18.9761 24.5799 20.4016C24.368 21.1899 23.75 21.8096 22.9665 22.019C21.5447 22.4001 15.84 22.4001 15.84 22.4001C15.84 22.4001 10.1382 22.4001 8.71344 22.019C7.92708 21.8066 7.30902 21.187 7.1001 20.4016C6.71998 18.9761 6.71998 16.0001 6.71998 16.0001C6.71998 16.0001 6.71998 13.0241 7.1001 11.5986C7.31192 10.8103 7.92998 10.1906 8.71344 9.98119C10.1382 9.6001 15.84 9.6001 15.84 9.6001C15.84 9.6001 21.5447 9.6001 22.9665 9.98119ZM18.7562 16.0001L14.0177 18.7434V13.2568L18.7562 16.0001Z"
                                             fill="white"></path>
                                     </g>
-                                </svg></a></div>
-                        <div class="main-footer__social-links--item"><a
-                                href="https://www.linkedin.com/edu/school?id=18565" class="main-footer__social-link"
-                                title="linkedin"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
-                                    viewBox="0 0 32 32" fill="none">
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="main-footer__social-links--item">
+                            <a href="https://www.linkedin.com/edu/school?id=18565" class="main-footer__social-link"
+                                title="linkedin">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32"
+                                    fill="none">
                                     <g>
                                         <rect width="32" height="32" rx="16" fill="currentColor"></rect>
                                         <g id="linkedin">
@@ -1586,7 +1541,9 @@
                                                 fill="white"></path>
                                         </g>
                                     </g>
-                                </svg></a></div>
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div class="main-footer__links-box">
@@ -1595,10 +1552,10 @@
                             <p class="address"><span>The University of Baltimore</span></p>
                             <p>1420 N. Charles St.<br>Baltimore, MD 21201</p>
                         </address>
-                        <h2 class="main-footer__title">General Information</h2><a class="main-footer__links-link"
-                            href="tel:4108374200">410.837.4200</a>
-                        <h2 class="main-footer__title">Office of Admission</h2><a class="main-footer__links-link"
-                            href="tel:18772775982">1.877.ApplyUB</a>
+                        <h2 class="main-footer__title">General Information</h2>
+                        <a class="main-footer__links-link" href="tel:4108374200">410.837.4200</a>
+                        <h2 class="main-footer__title">Office of Admission</h2>
+                        <a class="main-footer__links-link" href="tel:18772775982">1.877.ApplyUB</a>
                     </div>
                     <div class="main-footer__links-list-holder">
                         <h2 class="main-footer__title">Quick Links</h2>
@@ -1609,8 +1566,8 @@
                                     Information</a></div>
                             <div class="main-footer__links-item"><a class="main-footer__links-link"
                                     title="Web Accessibilit"
-                                    href="https://www.ubalt.edu/footer/web-accessibility.cfm">Web
-                                    Accessibility</a></div>
+                                    href="https://www.ubalt.edu/footer/web-accessibility.cfm">Web Accessibility</a>
+                            </div>
                             <div class="main-footer__links-item"><a class="main-footer__links-link" title="Parking"
                                     href="https://www.ubalt.edu/student-life/campus-resources/parking-and-public-transportation/index.cfm">Parking</a>
                             </div>
@@ -1619,12 +1576,12 @@
                                     href="https://www.ubalt.edu/admission-and-aid/visit-and-connect/directions/index.cfm">Map
                                     &amp; Directions</a></div>
                             <div class="main-footer__links-item"><a class="main-footer__links-link" title="Policy Guide"
-                                    href="https://www.ubalt.edu/footer/policies-and-procedures.cfm">Policy
-                                    Guide</a></div>
+                                    href="https://www.ubalt.edu/footer/policies-and-procedures.cfm">Policy Guide</a>
+                            </div>
                             <div class="main-footer__links-item"><a class="main-footer__links-link"
                                     title="Privacy Statement"
-                                    href="https://www.ubalt.edu/footer/privacy-statement.cfm">Privacy
-                                    Statement</a></div>
+                                    href="https://www.ubalt.edu/footer/privacy-statement.cfm">Privacy Statement</a>
+                            </div>
                             <div class="main-footer__links-item"><a class="main-footer__links-link"
                                     title="Campus Safety"
                                     href="https://www.ubalt.edu/student-life/campus-resources/safety-and-security/index.cfm">Campus
@@ -1654,52 +1611,121 @@
         // ----------------------------------------------------
         // POLICY GENERATOR APPLICATION LOGIC
         // ----------------------------------------------------
-
         let currentSection = 1;
         let approach = 'framework';
         let selectedLevel = null;
 
         const levelDefinitions = {
             none: {
-                title: 'Level 1: No AI Use', icon: '🚫',
+                title: 'Level 1: No AI Use',
+                icon: '🚫',
                 desc: 'This course/assignment is completed entirely without generative AI assistance. Students must rely solely on their own knowledge, critical thinking, and skills. This level is appropriate when assessing foundational competencies, original analytical thinking, or discipline-specific skills that require demonstration of individual mastery. Standard digital tools (spellcheck, citation managers) remain permitted.',
-                whatThisMeans: ['AI tools may not be used at any point during the assessment', 'All work must be independently produced by the student', 'Standard digital tools (spellcheck, citation managers) remain permitted'],
-                appropriateFor: ['Examinations and quizzes', 'Foundational skill assessments', 'Writing samples demonstrating individual voice', 'Assignments measuring specific competency acquisition'],
+                whatThisMeans: [
+                    'AI tools may not be used at any point during the assessment',
+                    'All work must be independently produced by the student',
+                    'Standard digital tools (spellcheck, citation managers) remain permitted'
+                ],
+                appropriateFor: [
+                    'Examinations and quizzes',
+                    'Foundational skill assessments',
+                    'Writing samples demonstrating individual voice',
+                    'Assignments measuring specific competency acquisition'
+                ],
                 disclosure: 'No AI disclosure required. Students may be required to sign an academic honesty pledge affirming AI was not used. Faculty may use AI detection tools as part of the assessment process.'
             },
             literacy: {
-                title: 'Level 2: AI Literacy', icon: '📖',
+                title: 'Level 2: AI Literacy',
+                icon: '📖',
                 desc: 'This course promotes AI literacy by encouraging students to critically examine the implications of AI technologies. Students will explore ethical considerations, evaluate the accuracy of AI outputs, identify potential biases, and develop informed perspectives on AI\'s role in their discipline.',
-                whatThisMeans: ['Students engage with AI as a subject of study', 'Critical analysis of AI capabilities and limitations is expected', 'Students examine ethical, social, and professional implications', 'Focus on developing informed, responsible AI users'],
-                appropriateFor: ['Courses introducing AI concepts', 'Ethics and technology courses', 'Professional development modules', 'Assignments focused on critical evaluation skills'],
+                whatThisMeans: [
+                    'Students engage with AI as a subject of study',
+                    'Critical analysis of AI capabilities and limitations is expected',
+                    'Students examine ethical, social, and professional implications',
+                    'Focus on developing informed, responsible AI users'
+                ],
+                appropriateFor: [
+                    'Courses introducing AI concepts',
+                    'Ethics and technology courses',
+                    'Professional development modules',
+                    'Assignments focused on critical evaluation skills'
+                ],
                 disclosure: 'AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted with final work. Students must address strengths and weaknesses of tools used. Reflection on AI\'s impact on the work product is required.'
             },
             ideation: {
-                title: 'Level 3: AI-Assisted Idea Generation & Structuring', icon: '💡',
+                title: 'Level 3: AI-Assisted Idea Generation & Structuring',
+                icon: '💡',
                 desc: 'AI may be used during the creative and planning phases of an assignment, but no AI-generated content is permitted in the final submission. Students may use AI for brainstorming, creating outlines, generating ideas, and improving the structure of their work. The final product must be entirely student-created.',
-                whatThisMeans: ['AI use is optional but permitted for preliminary work', 'Brainstorming and ideation with AI is acceptable', 'Outline and structure development may involve AI', 'All final content must be written/created by the student', 'AI-generated text may not appear in submitted work'],
-                appropriateFor: ['Research papers and essays', 'Project proposals', 'Creative assignments where original voice is essential', 'Assignments developing organizational skills'],
+                whatThisMeans: [
+                    'AI use is optional but permitted for preliminary work',
+                    'Brainstorming and ideation with AI is acceptable',
+                    'Outline and structure development may involve AI',
+                    'All final content must be written/created by the student',
+                    'AI-generated text may not appear in submitted work'
+                ],
+                appropriateFor: [
+                    'Research papers and essays',
+                    'Project proposals',
+                    'Creative assignments where original voice is essential',
+                    'Assignments developing organizational skills'
+                ],
                 disclosure: 'AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted with final work. Clear distinction between AI-assisted planning and student-created content is required.'
             },
             editing: {
-                title: 'Level 4: AI-Assisted Editing', icon: '✍️',
+                title: 'Level 4: AI-Assisted Editing',
+                icon: '✍️',
                 desc: 'AI may be used to improve the clarity, grammar, style, or quality of student-created work. No new content may be created using AI. The substantive ideas, arguments, analysis, and original content must be produced by the student; AI serves only to polish and refine existing work.',
-                whatThisMeans: ['AI use is optional but permitted for editing purposes', 'Students must first create all content independently', 'AI may be used for grammar, clarity, and style improvements', 'AI may not generate new ideas, arguments, or substantive content', 'The intellectual contribution remains entirely the student\'s'],
-                appropriateFor: ['Professional writing assignments', 'Non-native English speaker support', 'Assignments where clarity of communication is assessed', 'Documents requiring polished presentation'],
+                whatThisMeans: [
+                    'AI use is optional but permitted for editing purposes',
+                    'Students must first create all content independently',
+                    'AI may be used for grammar, clarity, and style improvements',
+                    'AI may not generate new ideas, arguments, or substantive content',
+                    'The intellectual contribution remains entirely the student\'s'
+                ],
+                appropriateFor: [
+                    'Professional writing assignments',
+                    'Non-native English speaker support',
+                    'Assignments where clarity of communication is assessed',
+                    'Documents requiring polished presentation'
+                ],
                 disclosure: 'AI disclosure statement must be included detailing how AI was used. Disclosure must specify which editing functions were employed. Must be submitted with final submission.'
             },
             specified: {
-                title: 'Level 5: AI for Specified Task Completion', icon: '🎯',
+                title: 'Level 5: AI for Specified Task Completion',
+                icon: '🎯',
                 desc: 'AI is used to complete certain elements of the task as specified by the instructor. Some assignments or components may use AI while others may not. This level requires critical engagement with AI-generated content and evaluation of its output. Students must demonstrate human oversight and evaluation of all AI-generated content.',
-                whatThisMeans: ['Instructor specifies which tasks/components permit AI use', 'Students must critically evaluate all AI-generated content', 'Human oversight and judgment are required', 'Non-AI options must be available for students who prefer them', 'Different rules may apply to different assignment components'],
-                appropriateFor: ['Multi-component projects', 'Courses teaching AI integration skills', 'Assignments with distinct creative and technical elements', 'Professional preparation courses'],
+                whatThisMeans: [
+                    'Instructor specifies which tasks/components permit AI use',
+                    'Students must critically evaluate all AI-generated content',
+                    'Human oversight and judgment are required',
+                    'Non-AI options must be available for students who prefer them',
+                    'Different rules may apply to different assignment components'
+                ],
+                appropriateFor: [
+                    'Multi-component projects',
+                    'Courses teaching AI integration skills',
+                    'Assignments with distinct creative and technical elements',
+                    'Professional preparation courses'
+                ],
                 disclosure: 'All AI-created content must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work. Clear identification of which portions involved AI assistance. Reflection on AI contribution may be required.'
             },
             collaborative: {
-                title: 'Level 6: AI Collaborative Tasks', icon: '🤝',
+                title: 'Level 6: AI Collaborative Tasks',
+                icon: '🤝',
                 desc: 'AI may be used throughout the assessment to support and enhance student work. Open-ended content creation with AI is permitted. AI can be used to enhance human creativity, generate drafts, and collaborate on complex tasks. Students remain responsible for providing human oversight, evaluation, and final judgment on all AI-generated content.',
-                whatThisMeans: ['AI may be used freely throughout the assignment', 'Open-ended content creation with AI is permitted', 'AI can enhance creativity and productivity', 'Student maintains responsibility for final product quality', 'Human oversight and evaluation remain essential', 'Student must demonstrate understanding of AI-generated content'],
-                appropriateFor: ['Advanced professional courses', 'Innovation and design projects', 'Courses preparing students for AI-integrated workplaces', 'Assignments emphasizing productivity and output quality'],
+                whatThisMeans: [
+                    'AI may be used freely throughout the assignment',
+                    'Open-ended content creation with AI is permitted',
+                    'AI can enhance creativity and productivity',
+                    'Student maintains responsibility for final product quality',
+                    'Human oversight and evaluation remain essential',
+                    'Student must demonstrate understanding of AI-generated content'
+                ],
+                appropriateFor: [
+                    'Advanced professional courses',
+                    'Innovation and design projects',
+                    'Courses preparing students for AI-integrated workplaces',
+                    'Assignments emphasizing productivity and output quality'
+                ],
                 disclosure: 'All AI use must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work. Clear documentation of the human-AI collaboration process. Student must be able to explain and defend all content.'
             }
         };
@@ -1722,10 +1748,15 @@
                 };
 
                 let disclosureReq = '';
-                if (key === 'none') disclosureReq = 'No AI disclosure required. Students may be required to sign an academic honesty pledge affirming AI was not used.';
-                else if (key === 'literacy' || key === 'ideation') disclosureReq = 'AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted.';
-                else if (key === 'editing') disclosureReq = 'AI disclosure statement must be included detailing how AI was used and specifying which editing functions were employed.';
-                else disclosureReq = 'All AI-created content must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work.';
+                if (key === 'none') {
+                    disclosureReq = 'No AI disclosure required. Students may be required to sign an academic honesty pledge affirming AI was not used.';
+                } else if (key === 'literacy' || key === 'ideation') {
+                    disclosureReq = 'AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted.';
+                } else if (key === 'editing') {
+                    disclosureReq = 'AI disclosure statement must be included detailing how AI was used and specifying which editing functions were employed.';
+                } else {
+                    disclosureReq = 'All AI-created content must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work.';
+                }
 
                 const whatList = level.whatThisMeans ? level.whatThisMeans.map(i => `<li>${i}</li>`).join('') : '';
                 const forList = level.appropriateFor ? level.appropriateFor.map(i => `<li>${i}</li>`).join('') : '';
@@ -1764,30 +1795,36 @@
             selectedCard.classList.add('selected');
         }
 
+        // ===============================================
+        // BUG FIX: Updated toggle behavior for checkboxes 
+        // to avoid conflicts with native browser actions
+        // ===============================================
         function toggleCheckbox(labelElement) {
-            const checkbox = labelElement.querySelector('input[type="checkbox"]');
-
-            // Fix input bug: Check if the user clicked the native checkbox vs the wrapper
-            if (window.event && window.event.target.tagName === 'INPUT') {
-                labelElement.classList.toggle('selected', checkbox.checked);
-            } else {
-                checkbox.checked = !checkbox.checked;
-                labelElement.classList.toggle('selected', checkbox.checked);
-            }
+            // Let the native <label> click finish updating the checkbox, then sync the CSS class
+            setTimeout(() => {
+                const checkbox = labelElement.querySelector('input[type="checkbox"]');
+                if (checkbox) {
+                    if (checkbox.checked) {
+                        labelElement.classList.add('selected');
+                    } else {
+                        labelElement.classList.remove('selected');
+                    }
+                }
+            }, 10);
         }
 
         function selectRadio(labelElement, groupName) {
-            const radio = labelElement.querySelector('input');
-
-            // Fix input bug: Check if the user clicked the native radio vs the wrapper
-            if (!window.event || window.event.target.tagName !== 'INPUT') {
-                radio.checked = true;
-            }
-
-            document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
-                r.closest('.radio-option').classList.remove('selected');
-            });
-            labelElement.classList.add('selected');
+            // Let the native <label> click finish updating the radio, then sync the CSS classes
+            setTimeout(() => {
+                document.querySelectorAll(`input[name="${groupName}"]`).forEach(r => {
+                    const container = r.closest('.radio-option');
+                    if (r.checked) {
+                        container.classList.add('selected');
+                    } else {
+                        container.classList.remove('selected');
+                    }
+                });
+            }, 10);
         }
 
         function updateProgress(step) {
@@ -1842,7 +1879,7 @@
 
         function getCheckedLabels(name) {
             const boxes = document.querySelectorAll(`input[name="${name}"]:checked`);
-            return Array.from(boxes).map(box => box.parentElement.textContent.trim());
+            return Array.from(boxes).map(box => box.parentElement.textContent.trim().replace(/\s+/g, ' '));
         }
 
         function generatePolicy() {
@@ -1850,9 +1887,10 @@
             const name = document.getElementById('courseName').value.trim();
             const instructor = document.getElementById('instructorName').value.trim();
             const semester = document.getElementById('semester').value.trim();
+
             const courseStr = (code || name) ? `${code ? code + ' - ' : ''}${name}` : 'This course';
 
-            let policy = `GENERATIVE AI USE IN THIS COURSE\n`;
+            let policy = `ARTIFICIAL INTELLIGENCE (AI) POLICY\n`;
             if (code || name) policy += `Course: ${courseStr}\n`;
             if (instructor) policy += `Instructor: ${instructor}\n`;
             if (semester) policy += `Semester: ${semester}\n`;
@@ -1863,16 +1901,23 @@
                 policy += `AI Level: ${levelInfo.title}\n\n`;
                 policy += `Policy Statement: In this course, AI use is set at ${levelInfo.title}, which means ${levelInfo.desc.toLowerCase()}\n\n`;
 
-                policy += `Permitted AI Tools: ${selectedLevel === 'none' ? 'None permitted for generative purposes. Standard digital tools (spellcheck, citation managers) remain permitted.' : 'BoodleBox AI is the primary institutional platform. Other tools are permitted as specified below or by the instructor.'}\n\n`;
+                let permittedToolsText = selectedLevel === 'none'
+                    ? 'None permitted for generative purposes. Standard digital tools (spellcheck, citation managers) remain permitted.'
+                    : 'BoodleBox AI is the primary institutional platform. Other tools are permitted as specified below or by the instructor.';
+                policy += `Permitted AI Tools: ${permittedToolsText}\n\n`;
 
                 let disc = "";
-                if (selectedLevel === 'none') disc = "No AI disclosure required. Students may be required to sign an academic honesty pledge affirming AI was not used.";
-                else if (selectedLevel === 'literacy' || selectedLevel === 'ideation') disc = "AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted with final work.";
-                else if (selectedLevel === 'editing') disc = "AI disclosure statement must be included detailing how AI was used and specifying which editing functions were employed.";
-                else disc = "All AI-created content must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work.";
+                if (selectedLevel === 'none') {
+                    disc = "No AI disclosure required. Students may be required to sign an academic honesty pledge affirming AI was not used.";
+                } else if (selectedLevel === 'literacy' || selectedLevel === 'ideation') {
+                    disc = "AI disclosure statement must be included describing how AI was used. Complete logs of AI interactions must be submitted with final work.";
+                } else if (selectedLevel === 'editing') {
+                    disc = "AI disclosure statement must be included detailing how AI was used and specifying which editing functions were employed.";
+                } else {
+                    disc = "All AI-created content must be cited using proper citation format for the discipline. Complete logs of AI chats must be submitted with final work.";
+                }
 
                 policy += `Disclosure Requirements: ${disc}\n\n`;
-
             } else {
                 // Custom Policy Generation
                 policy += `PERMITTED TOOLS:\n`;
@@ -1899,15 +1944,21 @@
                 if (disclosure.length) policy += `\nDISCLOSURE REQUIREMENTS:\n• ${disclosure.join('\n• ')}\n`;
 
                 const contribution = document.querySelector('input[name="humanContribution"]:checked');
-                if (contribution) policy += `\nEXPECTATIONS:\n• ${contribution.parentElement.textContent.trim()}\n`;
+                if (contribution) {
+                    const title = contribution.parentElement.querySelector('.radio-title').textContent.trim();
+                    const desc = contribution.parentElement.querySelector('.radio-description').textContent.trim();
+                    policy += `\nEXPECTATIONS:\n• ${title}: ${desc}\n`;
+                }
             }
 
             // Common Consequences & Support (Section 4)
             policy += `\nPOLICY VIOLATIONS:\n`;
             const consequences = getCheckedLabels('consequences');
             const consDetails = document.getElementById('consequencesDetails').value;
+
             if (consequences.length) policy += `Violations of this policy will result in: ${consequences.join(', ')}.\n`;
             if (consDetails) policy += `${consDetails}\n`;
+
             if (document.querySelector('input[value="integrity"]').checked) {
                 policy += `\nAll violations are subject to the University of Baltimore Academic Integrity Policy.\n`;
             }
@@ -1930,7 +1981,6 @@
 
         function copyPolicy() {
             const text = document.getElementById('policyOutput').textContent;
-
             // Safe copy approach for iframes
             const textarea = document.createElement('textarea');
             textarea.value = text;
@@ -1958,6 +2008,7 @@
             const courseCode = document.getElementById('courseCode').value || 'Policy';
             const blob = new Blob([text], { type: 'text/plain;charset=utf-8' });
             const url = URL.createObjectURL(blob);
+
             const a = document.createElement('a');
             a.href = url;
             a.download = `AI_Policy_${courseCode.replace(/\s+/g, '_')}.txt`;
@@ -1965,6 +2016,51 @@
             // Append, click, and cleanup
             document.body.appendChild(a);
             a.click();
+
+            setTimeout(() => {
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+            }, 100);
+        }
+
+        function downloadWord() {
+            const text = document.getElementById('policyOutput').textContent;
+            const courseCode = document.getElementById('courseCode').value || 'Policy';
+            const fileName = `AI_Policy_${courseCode.replace(/\s+/g, '_')}.doc`;
+
+            // Escape HTML entities to avoid breaking the Word document structure
+            const escapeHTML = (str) => str.replace(/[&<>'"]/g, tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag]));
+
+            // Convert plain text newlines into HTML breaks for the Word rendering format
+            const formattedText = escapeHTML(text).replace(/\n/g, '<br>');
+
+            const header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
+                "xmlns:w='urn:schemas-microsoft-com:office:word' " +
+                "xmlns='http://www.w3.org/TR/REC-html40'>" +
+                "<head><meta charset='utf-8'><title>AI Policy</title>" +
+                "<style>body { font-family: 'Georgia', serif; font-size: 12pt; }</style>" +
+                "</head><body>";
+
+            const footer = "</body></html>";
+            const sourceHTML = header + formattedText + footer;
+
+            // Create Blob with Word Mime Type
+            const blob = new Blob(['\ufeff', sourceHTML], { type: 'application/msword' });
+            const url = URL.createObjectURL(blob);
+
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = fileName;
+
+            document.body.appendChild(a);
+            a.click();
+
             setTimeout(() => {
                 document.body.removeChild(a);
                 URL.revokeObjectURL(url);
@@ -2041,21 +2137,19 @@
         }
 
         // =========================================
-
         function startOver() {
             document.querySelectorAll('#ai-policy-app input[type="text"], #ai-policy-app textarea').forEach(el => el.value = '');
-
             // Clear new fields
             ['instructorName', 'semester'].forEach(id => { const el = document.getElementById(id); if (el) el.value = ''; });
-
             document.querySelectorAll('#ai-policy-app input[type="checkbox"], #ai-policy-app input[type="radio"]').forEach(el => {
                 el.checked = false;
                 el.parentElement.classList.remove('selected');
             });
+
             selectedLevel = null;
             document.querySelectorAll('#ai-policy-app .level-card').forEach(c => c.classList.remove('selected'));
-            setApproach('framework');
 
+            setApproach('framework');
             document.getElementById('section5').classList.remove('active');
             document.getElementById('section1').classList.add('active');
             currentSection = 1;
