@@ -811,17 +811,15 @@
 
 <body class="has-section-nav" style="--scrollbar-width: 0px; --header-height: 116px;">
 
-    <!-- ========================================== -->
-    <!-- UBALT HEADER (Intact HTML Structure)       -->
-    <!-- ========================================== -->
-    <header class="main-header" style="min-width: 100%">
-        <a href="#main" class="skip-link visually-hidden">Skip to content</a>
+    <!-- UBalt Header Start -->
+    <header class="main-header" style="min-width: 100%"><a href="#main" class="skip-link visually-hidden">Skip
+            to content</a>
         <div class="main-header__content-holder">
             <div class="container">
                 <div class="main-header__content-wrapper">
                     <div class="main-header__logo-logos-box">
-                        <div class="main-header__logo-holder">
-                            <a href="https://www.ubalt.edu/" class="main-header__logo">
+                        <div class="main-header__logo-holder"><a href="https://www.ubalt.edu/"
+                                class="main-header__logo">
                                 <picture class="main-header__logo--original">
                                     <source media="(min-width:700px)"
                                         srcset="https://www.ubalt.edu/_resources/assets/img/main-header-logo-lg.png">
@@ -830,15 +828,20 @@
                                     <img src="https://www.ubalt.edu/_resources/assets/img/main-header-logo-sm.svg"
                                         alt="University of Baltimore" width="546" height="132">
                                 </picture>
-                            </a>
-                        </div>
+                                <picture class="main-header__logo--alternative">
+                                    <source media="(min-width:700px)"
+                                        srcset="https://www.ubalt.edu/_resources/assets/img/main-header-logo-lg-alt.png">
+                                    <source media="(max-width:701px)"
+                                        srcset="https://www.ubalt.edu/_resources/assets/img/main-header-logo-sm-alt.svg">
+                                    <img src="https://www.ubalt.edu/_resources/assets/img/main-header-logo-sm-alt.svg"
+                                        alt="University of Baltimore" width="554" height="133">
+                                </picture>
+                            </a></div>
                     </div>
-                    <!-- Search Box -->
-                    <div class="main-header__search-box" role="search">
-                        <button type="button" class="search-opener" aria-expanded="false">
-                            <span class="visually-hidden">open search</span>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="31" viewBox="0 0 30 31"
-                                fill="none">
+                    <div class="main-header__search-box" role="search"><button type="button" class="search-opener"
+                            aria-expanded="false"><span class="visually-hidden">open
+                                search</span><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31"
+                                viewBox="0 0 30 31" fill="none">
                                 <g>
                                     <path
                                         d="M14.6591 21.6364C18.6129 21.6364 21.8182 18.4311 21.8182 14.4773C21.8182 10.5234 18.6129 7.3182 14.6591 7.3182C10.7052 7.3182 7.5 10.5234 7.5 14.4773C7.5 18.4311 10.7052 21.6364 14.6591 21.6364Z"
@@ -846,66 +849,324 @@
                                     <path d="M24.5911 24.3637L19.8184 19.5909" stroke="currentColor" stroke-width="3">
                                     </path>
                                 </g>
-                            </svg>
-                        </button>
+                            </svg></button>
+                        <form action="https://www.ubalt.edu/search/index.cfm" class="search__form" aria-hidden="true">
+                            <label for="header-search" class="visually-hidden">search</label><input id="header-search"
+                                type="search" name="q" class="search__input" placeholder="Search"><button type="submit"
+                                class="search__submit"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="31"
+                                    viewBox="0 0 30 31" fill="none">
+                                    <g>
+                                        <path
+                                            d="M14.6591 21.6364C18.6129 21.6364 21.8182 18.4311 21.8182 14.4773C21.8182 10.5234 18.6129 7.3182 14.6591 7.3182C10.7052 7.3182 7.5 10.5234 7.5 14.4773C7.5 18.4311 10.7052 21.6364 14.6591 21.6364Z"
+                                            stroke="currentColor" stroke-width="3"></path>
+                                        <path d="M24.5911 24.3637L19.8184 19.5909" stroke="currentColor"
+                                            stroke-width="3"></path>
+                                    </g>
+                                </svg><span class="visually-hidden">Submit</span></button>
+                        </form><button type="button" class="search-close"><span class="visually-hidden">close
+                                search</span></button>
                     </div>
-                    <!-- Mobile Menu Opener -->
-                    <nav class="main-header__nav-opener_wrapper" aria-label="Full">
-                        <button class="main-header__nav-opener" type="button" aria-expanded="false">
-                            <span class="icon"><span></span></span>Menu
-                        </button>
-                    </nav>
-                    <!-- Navigation Content -->
+                    <nav class="main-header__nav-opener_wrapper" aria-label="Full"><button
+                            class="main-header__nav-opener" type="button" aria-expanded="false"><span
+                                class="icon"><span></span></span>Menu
+                        </button></nav>
                     <div class="main-header__nav-holder" aria-hidden="true">
                         <div class="main-header__nav-box">
                             <div class="main-header__main-nav-wrapper">
                                 <nav class="main-nav" aria-label="Main">
-                                    <div class="main-nav__item">
-                                        <a href="https://www.ubalt.edu/academics/index.cfm"
-                                            class="main-nav__link">Academics</a>
-                                        <button type="button" class="main-nav__submenu-opener"
-                                            aria-expanded="false"><span class="visually-hidden">Submenu</span></button>
+                                    <div class="main-nav__item"><a href="https://www.ubalt.edu/academics/index.cfm"
+                                            class="main-nav__link">Academics</a><button type="button"
+                                            class="main-nav__submenu-opener" aria-expanded="false"><span
+                                                class="visually-hidden">Submenu</span></button>
                                         <div class="main-nav__submenu-box" aria-hidden="true">
                                             <div class="main-nav__submenu__list">
                                                 <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Explore All Programs"
                                                         href="https://www.ubalt.edu/academics/explore-all-programs/index.cfm">Explore
                                                         All Programs</a></div>
                                                 <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Undergrad Academics"
                                                         href="https://www.ubalt.edu/academics/undergraduate-academics/index.cfm">Undergrad
                                                         Academics</a></div>
                                                 <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Graduate Academics"
                                                         href="https://www.ubalt.edu/academics/graduate-academics/index.cfm">Graduate
                                                         Academics</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Professional Pathways"
+                                                        href="https://www.ubalt.edu/academics/professional-pathways/index.cfm">Professional
+                                                        Pathways</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Libraries"
+                                                        href="https://www.ubalt.edu/academics/academic-libraries/index.cfm">Libraries</a>
+                                                </div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Learn Online At UBalt"
+                                                        href="https://www.ubalt.edu/academics/learn-online-at-ubalt/online-programs.cfm">Learn
+                                                        Online At UBalt</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Early College Initiatives"
+                                                        href="https://www.ubalt.edu/academics/early-college-initiatives/index.cfm">Early
+                                                        College Initiatives</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Classes &amp; Registration"
+                                                        href="https://www.ubalt.edu/academics/classes-and-registration/index.cfm">Classes
+                                                        &amp; Registration</a></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main-nav__item">
-                                        <a href="https://www.ubalt.edu/admission-and-aid/index.cfm"
-                                            class="main-nav__link">Admission &amp; Aid</a>
-                                        <button type="button" class="main-nav__submenu-opener"
-                                            aria-expanded="false"><span class="visually-hidden">Submenu</span></button>
+                                    <div class="main-nav__item"><a
+                                            href="https://www.ubalt.edu/admission-and-aid/index.cfm"
+                                            class="main-nav__link">Admission &amp; Aid</a><button type="button"
+                                            class="main-nav__submenu-opener" aria-expanded="false"><span
+                                                class="visually-hidden">Submenu</span></button>
                                         <div class="main-nav__submenu-box" aria-hidden="true">
                                             <div class="main-nav__submenu__list">
                                                 <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Undergraduate Admissions"
                                                         href="https://www.ubalt.edu/admission-and-aid/undergraduate-admissions/index.cfm">First-Year
+                                                        Undergraduate Admission</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Transfer Admissions"
+                                                        href="https://www.ubalt.edu/admission-and-aid/transfer-admissions/index.cfm">Transfer
                                                         Admission</a></div>
                                                 <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Graduate Admissions"
+                                                        href="https://www.ubalt.edu/admission-and-aid/graduate-admissions/index.cfm">Graduate
+                                                        Admission</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Law Admissions"
+                                                        href="https://www.ubalt.edu/law/admission-and-aid/index.cfm">Law
+                                                        Admission</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        href="https://www.ubalt.edu/admission-and-aid/international-admissions/index.cfm">International
+                                                        Admission</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Apply for Readmission"
+                                                        href="https://www.ubalt.edu/admission-and-aid/apply-for-readmission/index.cfm">Apply
+                                                        for Readmission</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Tuition &amp; Fees"
+                                                        href="https://www.ubalt.edu/admission-and-aid/tuition-and-fees/index.cfm">Tuition
+                                                        &amp; Fees</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Financial Aid &amp; Scholarships"
                                                         href="https://www.ubalt.edu/admission-and-aid/financial-aid/index.cfm">Financial
                                                         Aid &amp; Scholarships</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Visit &amp; Connect"
+                                                        href="https://www.ubalt.edu/admission-and-aid/visit-and-connect/index.cfm">Visit
+                                                        &amp; Connect</a></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="main-nav__item">
-                                        <a href="https://www.ubalt.edu/student-life/index.cfm"
-                                            class="main-nav__link">Student Life</a>
+                                    <div class="main-nav__item"><a href="https://www.ubalt.edu/student-life/index.cfm"
+                                            class="main-nav__link">Student Life</a><button type="button"
+                                            class="main-nav__submenu-opener" aria-expanded="false"><span
+                                                class="visually-hidden">Submenu</span></button>
+                                        <div class="main-nav__submenu-box" aria-hidden="true">
+                                            <div class="main-nav__submenu__list">
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Get Involved"
+                                                        href="https://www.ubalt.edu/student-life/get-involved/index.cfm">Get
+                                                        Involved</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Housing"
+                                                        href="https://www.ubalt.edu/student-life/housing.cfm">Housing</a>
+                                                </div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Student Support"
+                                                        href="https://www.ubalt.edu/student-life/student-support/index.cfm">Student
+                                                        Support</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Campus Resources"
+                                                        href="https://www.ubalt.edu/student-life/campus-resources/index.cfm">Campus
+                                                        Resources</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Campus Traditions"
+                                                        href="https://www.ubalt.edu/student-life/campus-traditions/index.cfm">Campus
+                                                        Traditions</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Events Calendar"
+                                                        href="https://www.ubalt.edu/events-calendar/index.cfm">Events
+                                                        Calendar</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav__item"><a href="https://www.ubalt.edu/about/index.cfm"
+                                            class="main-nav__link">About</a><button type="button"
+                                            class="main-nav__submenu-opener" aria-expanded="false"><span
+                                                class="visually-hidden">Submenu</span></button>
+                                        <div class="main-nav__submenu-box" aria-hidden="true">
+                                            <div class="main-nav__submenu__list">
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Mission &amp; Strategic Plan"
+                                                        href="https://www.ubalt.edu/about/mission-and-strategic-plan.cfm">Mission
+                                                        &amp; Strategic Plan</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Why UBalt"
+                                                        href="https://www.ubalt.edu/about/why-ubalt.cfm">Why
+                                                        UBalt?</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="About Baltimore"
+                                                        href="https://www.ubalt.edu/about/about-baltimore.cfm">About
+                                                        Baltimore</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Diversity &amp; Inclusion"
+                                                        href="https://www.ubalt.edu/about/diversity-and-inclusion/index.cfm">Diversity
+                                                        &amp; Inclusion</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="UBalt Initiatives"
+                                                        href="https://www.ubalt.edu/about/ubalt-initiatives/index.cfm">UBalt
+                                                        Initiatives</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="News &amp; Stories"
+                                                        href="https://www.ubalt.edu/about/newsroom/news-and-stories/index.cfm">News
+                                                        &amp; Stories</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Faculty &amp; Staff Directory"
+                                                        href="https://www.ubalt.edu/directory/index.cfm">Faculty
+                                                        &amp; Staff Directory</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Offices &amp; Services"
+                                                        href="https://www.ubalt.edu/about/offices-and-services/index.cfm">Offices
+                                                        &amp; Services</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        title="Centers, Clinics, and Institutes"
+                                                        href="https://www.ubalt.edu/about/centers-clinics-and-institutes/index.cfm">Centers,
+                                                        Clinics, and Institutes</a></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="main-nav__item"><a href="https://www.ubalt.edu/directory/index.cfm"
+                                            class="main-nav__link">Directories</a><button type="button"
+                                            class="main-nav__submenu-opener" aria-expanded="false"><span
+                                                class="visually-hidden">Submenu</span></button>
+                                        <div class="main-nav__submenu-box" aria-hidden="true">
+                                            <div class="main-nav__submenu__list">
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        href="https://www.ubalt.edu/directory/index.cfm?input-0=Faculty">Faculty
+                                                        Directory</a></div>
+                                                <div class="main-nav__submenu__item"><a class="main-nav__submenu-link"
+                                                        href="https://www.ubalt.edu/directory/index.cfm?input-0=Staff">Staff
+                                                        Directory</a></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </nav>
-                                <div class="main-header__cta-list">
-                                    <a href="https://www.ubalt.edu/admission-and-aid/apply-now.cfm"
-                                        class="main-header__cta-list__link main-header__cta-list__link--yellow cta--button">
-                                        <span class="text">Apply</span>
-                                    </a>
+                                <div class="main-header__cta-list"><a
+                                        href="https://www.ubalt.edu/academics/explore-all-programs/index.cfm"
+                                        target="_self"
+                                        class="main-header__cta-list__link main-header__cta-list__link--teal cta--button"><span
+                                            class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="16"
+                                                viewBox="0 0 24 16" fill="none">
+                                                <g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.8503 1.24319L1.4168 4.7633C1.15287 4.86997 1 5.04015 1 5.26322V14.3067C1 14.9438 2.00095 14.9246 2.00095 14.3067V5.95957L4.721 6.87676V11.6367C4.721 11.7462 4.75815 11.8553 4.82492 11.942C4.89165 12.0287 4.98765 12.0925 5.09345 12.1205L11.8823 13.9172C11.9658 13.9392 12.055 13.9392 12.1384 13.9172L18.9248 12.1205C19.0306 12.0925 19.1266 12.0287 19.1933 11.942C19.2601 11.8552 19.2972 11.7461 19.2972 11.6367V6.87801L22.6802 5.7375C23.1332 5.57912 23.0791 4.89593 22.6802 4.78903L12.1703 1.24319C12.0703 1.21641 11.9546 1.21521 11.8503 1.24319ZM12.0103 2.24551L20.9542 5.26307L12.0103 8.27831L3.06717 5.26283L12.0103 2.24551ZM5.72195 7.21427L11.8504 9.28074C11.9532 9.31541 12.0675 9.31541 12.1703 9.28074L18.2963 7.21545V11.2514L12.0103 12.9157L5.72195 11.2514V7.21427Z"
+                                                        fill="currentColor" stroke="currentColor" stroke-width="0.75">
+                                                    </path>
+                                                </g>
+                                            </svg></span><span class="text">Programs</span></a><a
+                                        href="https://www.ubalt.edu/admission-and-aid/apply-now.cfm" target="_self"
+                                        class="main-header__cta-list__link main-header__cta-list__link--yellow cta--button"><span
+                                            class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22"
+                                                viewBox="0 0 22 22" fill="none">
+                                                <g>
+                                                    <path d="M6.5 19.5L20 6.75L15.5 2.5L2 15.25V19.5H6.5Z"
+                                                        stroke="currentColor" stroke-width="2"></path>
+                                                    <path d="M4 14.5L8 18.5" stroke="currentColor" stroke-width="2">
+                                                    </path>
+                                                    <path d="M13 5.5L17 9.5" stroke="currentColor" stroke-width="2">
+                                                    </path>
+                                                    <path d="M6 19.5H20" stroke="currentColor" stroke-width="2">
+                                                    </path>
+                                                </g>
+                                            </svg></span><span class="text">Apply</span></a><a
+                                        href="https://www.ubalt.edu/admission-and-aid/visit-and-connect/index.cfm"
+                                        target="_self"
+                                        class="main-header__cta-list__link main-header__cta-list__link--purple cta--button"><span
+                                            class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                                                viewBox="0 0 23 22" fill="none">
+                                                <g>
+                                                    <path
+                                                        d="M4.625 9.35C4.625 15.95 11.5 19.25 11.5 19.25C11.5 19.25 18.375 15.95 18.375 9.35C18.375 5.70625 15.2984 2.75 11.5 2.75C7.70156 2.75 4.625 5.70625 4.625 9.35Z"
+                                                        stroke="currentColor" stroke-width="2"></path>
+                                                    <path
+                                                        d="M11.5 11.605C12.8062 11.605 13.865 10.5462 13.865 9.24C13.865 7.93385 12.8062 6.875 11.5 6.875C10.1939 6.875 9.13501 7.93385 9.13501 9.24C9.13501 10.5462 10.1939 11.605 11.5 11.605Z"
+                                                        stroke="currentColor" stroke-width="2"></path>
+                                                </g>
+                                            </svg></span><span class="text">Visit</span></a><a
+                                        href="https://www.ubalt.edu/give/index.cfm" target="_self"
+                                        class="main-header__cta-list__link main-header__cta-list__link--coral cta--button"><span
+                                            class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="22"
+                                                viewBox="0 0 23 22" fill="none">
+                                                <g>
+                                                    <path
+                                                        d="M12.5917 5.1401L11.4402 6.39233L10.2888 5.15066C9.56353 4.46771 8.62562 4.1079 7.66452 4.1439C6.70343 4.17991 5.79079 4.60904 5.11099 5.34462C4.43119 6.08019 4.03491 7.06737 4.0022 8.10672C3.96949 9.14606 4.30279 10.1601 4.93477 10.9439L6.08624 12.1891L8.76975 15.091L11.4402 18L14.1237 15.0981L16.8072 12.1962L17.9457 10.9439C18.6321 10.1688 19.0105 9.13366 18.9998 8.06044C18.989 6.98721 18.59 5.96123 17.8882 5.2023C17.1864 4.44337 16.2376 4.01187 15.2452 4.00024C14.2527 3.98862 13.2955 4.39779 12.5787 5.1401H12.5917Z"
+                                                        stroke="currentColor" stroke-width="2"></path>
+                                                </g>
+                                            </svg></span><span class="text">Give</span></a></div>
+                                <div class="main-header__additional-links"><a class="cta cta--link"
+                                        title="Request Information"
+                                        href="https://www.ubalt.edu/admission-and-aid/visit-and-connect/request-information.cfm">Request
+                                        <span class="last-word">Information<span></span></span></a><a
+                                        class="cta cta--link" href="https://myubalt.ubalt.edu/" target="_blank"
+                                        rel="noopener"> <span class="last-word">MyUBalt<span></span></span></a>
                                 </div>
+                            </div>
+                            <div class="main-header__secondary-nav-wrapper">
+                                <nav class="secondary-nav" aria-label="Secondary">
+                                    <div class="secondary-nav__item">
+                                        <h2 class="secondary-nav__title">Information For
+                                        </h2>
+                                        <div class="secondary-nav__links"><a class="secondary-nav__link"
+                                                title="Business Leaders &amp; Employers"
+                                                href="https://www.ubalt.edu/information-for/business-leaders-and-employers/index.cfm">Business
+                                                Leaders &amp; Employers</a><a class="secondary-nav__link" title="Alumni"
+                                                href="https://www.ubalt.edu/information-for/alumni/index.cfm">Alumni</a><a
+                                                class="secondary-nav__link" title="Community Member"
+                                                href="https://www.ubalt.edu/information-for/community-members/index.cfm">Community
+                                                Members</a><a class="secondary-nav__link" title="Current Students"
+                                                href="https://www.ubalt.edu/information-for/current-students/index.cfm">Current
+                                                Students</a><a class="secondary-nav__link" title="Military / Veterans"
+                                                href="https://www.ubalt.edu/information-for/military/veterans.cfm">Military
+                                                / Veterans</a><a class="secondary-nav__link"
+                                                title="International Students"
+                                                href="https://www.ubalt.edu/information-for/international-students/index.cfm">International
+                                                Students</a><a class="secondary-nav__link" title="Faculty &amp; Staff"
+                                                href="https://www.ubalt.edu/information-for/faculty-and-staff/index.cfm">Faculty
+                                                &amp; Staff</a></div>
+                                    </div>
+                                    <div class="secondary-nav__item">
+                                        <h2 class="secondary-nav__title">Schools &amp; Colleges
+                                        </h2>
+                                        <div class="secondary-nav__links"><a class="secondary-nav__link"
+                                                title="Merrick School of Business"
+                                                href="https://www.ubalt.edu/schools-and-colleges/merrick-school-of-business/index.cfm">Merrick
+                                                School of Business</a><a class="secondary-nav__link"
+                                                title="School of Law" href="https://www.ubalt.edu/law/index.cfm">School
+                                                of Law</a><a class="secondary-nav__link"
+                                                title="College of Public Affairs"
+                                                href="https://www.ubalt.edu/schools-and-colleges/college-of-public-affairs/index.cfm">College
+                                                of Public Affairs</a><a class="secondary-nav__link"
+                                                title="Yale Gordon College of Arts &amp; Sciences"
+                                                href="https://www.ubalt.edu/schools-and-colleges/yale-gordon-college-of-arts-and-sciences/index.cfm">Yale
+                                                Gordon College of Arts &amp; Sciences</a><a class="secondary-nav__link"
+                                                title="UBalt at the Universities at Shady Grove"
+                                                href="https://www.ubalt.edu/schools-and-colleges/ubalt-at-the-universities-at-shady-grove/index.cfm">UBalt
+                                                at the Universities at Shady Grove</a></div>
+                                    </div>
+                                    <div class="secondary-nav__item">
+                                        <h2 class="secondary-nav__title">Libraries
+                                        </h2>
+                                        <div class="secondary-nav__links"><a class="secondary-nav__link"
+                                                title="Robert L. Bogomolny Library"
+                                                href="https://www.ubalt.edu/library/index.cfm">Robert L.
+                                                Bogomolny Library</a><a class="secondary-nav__link" title="Law Library"
+                                                href="https://www.ubalt.edu/law/library/index.cfm">Law
+                                                Library</a></div>
+                                    </div>
+                                </nav>
                             </div>
                         </div>
                     </div>
@@ -913,6 +1174,7 @@
             </div>
         </div>
     </header>
+    <!-- UBalt Header End -->
 
     <!-- ========================================== -->
     <!-- APPLICATION MAIN CONTENT                   -->
@@ -955,7 +1217,7 @@
 
                     <div class="info-box">
                         <div class="info-box-title">ℹ️ About AI Policies</div>
-                        <p>Syllabi must include a statement that clarifies expectations for Generative AI within your
+                        <p>Syllabus must include a statement that clarifies expectations for Generative AI within your
                             course. You can use our predefined framework or create a custom policy.</p>
                     </div>
 
